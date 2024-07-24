@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.inputnama"
+    namespace = "com.vsga.hadiansyach"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.inputnama"
+        applicationId = "com.vsga.hadiansyach"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

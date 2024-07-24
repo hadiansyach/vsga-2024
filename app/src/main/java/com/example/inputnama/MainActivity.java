@@ -3,37 +3,27 @@ package com.example.inputnama;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    EditText etNama;
-    TextView tvNama;
+import com.vsga.hadiansyach.R;
 
-    public void submitNama(View view) {
-        String nama = etNama.getText().toString();
-        if (nama.isEmpty()) {
-            Toast.makeText(this, "Nama tidak boleh kosong!", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        tvNama.setText(nama);
-    }
+public class MainActivity extends AppCompatActivity {
+
+    ListView listView;
+    String[] countries = new String[]{"Indonesia", "Malaysia", "Singapura", "Thailand", "Vietnam", "Filipina", "Brunei Darussalam", "Arab Saudi", "Korea Selatan", "Jepang", "Jerman", "Australia", "Nepal", "Kroasia", "Spanyol", "Sri Lanka", "France", "Italia", "Slovakia", "Slovenia", "Kuba"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etNama = findViewById(R.id.etNama);
-        tvNama = findViewById(R.id.tvNama);
+        listView = findViewById(R.id.listViewCountries);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, android.R.id.text1, countries);
 
-        findViewById(R.id.btnSubmit).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                submitNama(view);
-            }
-        });
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener((parent, view, position, id) -> Toast.makeText(this, countries[position] + " clicked", Toast.LENGTH_SHORT).show());
     }
 }
