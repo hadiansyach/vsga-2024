@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.inputnama"
+    namespace = "com.example.operasifile"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.inputnama"
+        applicationId = "com.example.operasifile"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

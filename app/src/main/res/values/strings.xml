@@ -2,4 +2,9 @@
     <string name="app_name">Input Nama</string>
     <string name="masukkan_nama_anda">Masukkan Nama Anda</string>
     <string name="hello">Hello!</string>
+    <string name="simpan_file">Simpan File</string>
+    <string name="ubah_file">Ubah File</string>
+    <string name="baca_file">Baca File</string>
+    <string name="hapus_file">Hapus File</string>
+    <string name="value_file">Value File</string>
 </resources>
