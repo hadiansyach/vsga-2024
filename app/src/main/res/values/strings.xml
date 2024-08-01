@@ -2,4 +2,9 @@
     <string name="app_name">Input Nama</string>
     <string name="masukkan_nama_anda">Masukkan Nama Anda</string>
     <string name="hello">Hello!</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tambah_catatan">Tambah Catatan</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="file_name">File Name</string>
 </resources>
