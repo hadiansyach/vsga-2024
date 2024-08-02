@@ -25,25 +25,25 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Masukkan Nama">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etAlamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="12dp"
             android:hint="Masukkan Alamat">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -62,7 +62,7 @@
                 android:text="@string/submit" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonCancels"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
