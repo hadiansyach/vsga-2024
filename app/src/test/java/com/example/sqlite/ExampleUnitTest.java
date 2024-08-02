@@ -1,4 +1,4 @@
-package com.example.inputnama;
+package com.example.sqlite;
 
 import org.junit.Test;
 

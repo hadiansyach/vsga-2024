@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.inputnama"
+    namespace = "com.example.sqlite"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.inputnama"
+        applicationId = "com.example.sqlite"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
