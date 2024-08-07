@@ -1,4 +1,4 @@
-package com.example.inputnama;
+package com.example.sensor;
 
 import android.content.Context;
 
